@@ -1,19 +1,63 @@
-name: 💡 Feature Request
-description: Propose a new feature or improvement
+name: Feature request
+description: Propose a capability or a material improvement
 title: "[Feature]: "
 labels: ["enhancement"]
 body:
+  - type: markdown
+    attributes:
+      value: |
+        Describe the problem before prescribing implementation. Do not include confidential requirements, credentials, personal data, or private customer information.
+
   - type: textarea
     id: problem
     attributes:
-      label: Problem or Motivation
-      description: What problem would this feature solve or what workflow would it enable?
+      label: Problem and users
+      description: What concrete problem exists, who encounters it, and how often?
     validations:
       required: true
+
+  - type: textarea
+    id: current
+    attributes:
+      label: Current workflow
+      description: Explain how the task is handled now and why the existing behaviour is insufficient.
+    validations:
+      required: true
+
+  - type: textarea
+    id: requirements
+    attributes:
+      label: Required outcome
+      description: State observable acceptance criteria without assuming a particular implementation.
+    validations:
+      required: true
+
   - type: textarea
     id: proposal
     attributes:
-      label: Proposed Solution
-      description: Describe the solution you would like to see implemented.
-    validations:
-      required: true
+      label: Proposed approach
+      description: Describe the preferred solution, interface, or workflow and why it fits the repository.
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Include simpler workarounds, rejected approaches, and relevant trade-offs.
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: Compatibility and operational impact
+      description: Note security, privacy, permissions, dependencies, migration, storage, performance, accessibility, deployment, and rollback implications.
+
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Confirmation
+      options:
+        - label: I searched existing issues, documentation, and the current roadmap.
+          required: true
+        - label: The request describes an outcome rather than only a preferred technology.
+          required: true
+        - label: I removed confidential, personal, and security-sensitive information.
+          required: true
