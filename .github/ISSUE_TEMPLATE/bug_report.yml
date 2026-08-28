@@ -1,33 +1,88 @@
-name: 🐛 Bug Report
-description: Report a reproducible software defect
+name: Bug report
+description: Report a reproducible defect in this repository
 title: "[Bug]: "
 labels: ["bug"]
 body:
   - type: markdown
     attributes:
-      value: Thank you for reporting a bug. Please fill in the details below.
-  - type: textarea
-    id: description
+      value: |
+        Report security vulnerabilities privately through SECURITY.md. Do not include credentials, personal data, production configuration, or licensed private assets.
+
+  - type: input
+    id: version
     attributes:
-      label: Description
-      description: A clear and concise description of what the bug is.
+      label: Version or commit
+      description: Release, build, package version, image tag, or commit SHA where the defect occurs.
+      placeholder: "v1.2.3, build 42, or abc1234"
     validations:
       required: true
-  - type: textarea
-    id: reproduction
-    attributes:
-      label: Steps to Reproduce
-      description: Exact steps to reproduce the issue.
-      placeholder: |
-        1. Run command ...
-        2. Click on ...
-        3. See error
-    validations:
-      required: true
+
   - type: input
     id: environment
     attributes:
       label: Environment
-      description: OS version, runtime version, device hardware (e.g. macOS 15.1 M3, iPhone 16 Pro iOS 18.2).
+      description: Operating system, device or architecture, runtime/toolchain, deployment mode, and relevant dependency versions.
+      placeholder: "macOS 27.0 on Apple silicon; Python 3.13; local installation"
     validations:
       required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Defect
+      description: Describe the failure and its practical impact.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction steps
+      description: Provide the smallest deterministic sequence that reproduces the defect.
+      placeholder: |
+        1. Configure ...
+        2. Run ...
+        3. Observe ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behaviour
+      description: State the result you expected and the contract or documentation supporting it.
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behaviour
+      description: State what happened instead, including exact errors or exit codes.
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Sanitised evidence
+      description: Add minimal logs, stack traces, screenshots, or diagnostic output after removing sensitive data.
+      render: shell
+
+  - type: textarea
+    id: regression
+    attributes:
+      label: Regression and workarounds
+      description: Note the last known working version, frequency, workaround, and whether data or service availability is at risk.
+
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Confirmation
+      options:
+        - label: I searched existing issues and documentation.
+          required: true
+        - label: I removed credentials, personal data, production secrets, and other sensitive material.
+          required: true
+        - label: This is not a security vulnerability requiring private disclosure.
+          required: true
