@@ -1,17 +1,31 @@
-# Magrathean UK — Organization Governance & Community Health
+# Magrathean UK — Shared GitHub Defaults
 
-This repository provides account-wide default community health files, security policies, issue templates, and CI/CD compliance workflows for [Magrathean UK](https://magrathean.uk).
+This repository contains the shared community-health and contribution defaults used across repositories owned by [`@magrathean-uk`](https://github.com/magrathean-uk).
 
-## Scope & Standards
+Repository-specific files always take precedence. A product repository may override these defaults where its licence, support model, security boundary, release process, or contributor workflow differs.
 
-All repositories under `@magrathean-uk` adhere to:
-- **Local-First & Privacy-First Engineering:** On-device computation, minimal telemetry, zero unauthorized data exfiltration.
-- **Strict License Integrity:** Explicit proprietary vs open-source categorization, cargo-deny enforcement, and complete third-party notices.
-- **Responsible Vulnerability Disclosure:** Direct security channel with clear safe harbour protections.
+## Included defaults
 
-## Canonical Files
+- [`SECURITY.md`](./SECURITY.md) — vulnerability reporting, disclosure expectations, and safe-harbour guidance.
+- [`SUPPORT.md`](./SUPPORT.md) — support boundaries and contact routes.
+- [`CONTRIBUTING.md`](./CONTRIBUTING.md) — contribution workflow, verification expectations, and DCO requirements.
+- [`CODE_OF_CONDUCT.md`](./CODE_OF_CONDUCT.md) — contributor conduct requirements.
+- [Issue templates](./.github/ISSUE_TEMPLATE/) — structured bug and feature reports.
+- [Pull request template](./.github/PULL_REQUEST_TEMPLATE.md) — change scope, testing, security, and rollback evidence.
 
-- [`SECURITY.md`](./SECURITY.md) — Universal security and vulnerability disclosure policy.
-- [`SUPPORT.md`](./SUPPORT.md) — Technical support, documentation indexes, and inquiries.
-- [`CONTRIBUTING.md`](./CONTRIBUTING.md) — Contribution workflow, code formatting, and Developer Certificate of Origin (DCO).
-- [`CODE_OF_CONDUCT.md`](./CODE_OF_CONDUCT.md) — Contributor Covenant Code of Conduct v2.1.
+## Engineering baseline
+
+Magrathean repositories generally favour:
+
+- local-first and privacy-conscious operation;
+- explicit open-source or proprietary licensing, never ambiguous source availability;
+- least-privilege credentials and no committed secrets;
+- reproducible commands, tests, release evidence, and operational runbooks;
+- clear separation between generated artefacts, source of truth, and local machine state;
+- responsible vulnerability disclosure through a private security channel.
+
+These are defaults, not a substitute for a repository's own `README`, `LICENSE`, `SECURITY`, `AGENTS`, architecture, or runbook files.
+
+## Contact
+
+Use the affected repository's issue tracker for non-sensitive defects. Report security issues through the route in [`SECURITY.md`](./SECURITY.md). General enquiries: <contact@magrathean.uk>.
