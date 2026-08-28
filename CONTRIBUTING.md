@@ -1,23 +1,55 @@
-# Contributing to Magrathean UK Projects
+# Contributing to Magrathean UK Repositories
 
-Thank you for your interest in contributing to Magrathean UK projects!
+This is the default contribution policy for repositories that do not provide their own `CONTRIBUTING.md` or `AGENTS.md`. The closest repository-specific instructions, licence, architecture, runbook, and generated-file rules take precedence.
 
-## Developer Certificate of Origin (DCO)
+Some public repositories contain proprietary source or public support material and may not accept external code contributions. Public visibility alone does not imply an open-source licence. Check the affected repository's `LICENSE` before starting work.
 
-To ensure clear intellectual property provenance, all contributions to open-source Magrathean repositories must include a Developer Certificate of Origin sign-off line in commit messages:
+## Before changing code
+
+1. Read the repository README, licence, contribution instructions, agent guidance, architecture, and runbook.
+2. Search existing issues and pull requests.
+3. For a substantial behavioural, architectural, dependency, storage, protocol, or user-interface change, open a proposal before implementation.
+4. Confirm which files are generated and which file is the source of truth.
+5. Keep credentials, customer data, personal data, production configuration, and licensed third-party assets out of commits and fixtures.
+
+## Change expectations
+
+- Keep the change narrowly scoped and explain why it is needed.
+- Preserve security boundaries, data ownership, compatibility, and rollback behaviour unless the proposal explicitly changes them.
+- Add or update tests for changed behaviour where the repository has a test lane.
+- Run the exact verification commands documented by that repository. Do not invent generic lint or formatting requirements that the project does not configure.
+- Update operator, user, API, migration, release, and recovery documentation when behaviour changes.
+- Do not hand-edit generated projects, bindings, lockstep artefacts, vendor trees, build outputs, or release evidence unless the repository explicitly says to do so.
+- Introduce dependencies only when their purpose, maintenance burden, licence, security impact, and replacement cost are understood.
+
+## Licensing and provenance
+
+Contributions are submitted under the licence of the affected repository unless a separate written agreement says otherwise. You must have the right to contribute every line, asset, fixture, translation, model, font, icon, and dependency included in the change.
+
+Copyleft, source-available, proprietary, or otherwise restrictive dependencies are not automatically prohibited, but they must be compatible with the repository's licence and distribution model and must be documented explicitly.
+
+Unless a repository says otherwise, commits to an open-source Magrathean project should include a Developer Certificate of Origin sign-off:
 
 ```text
 Signed-off-by: Full Name <email@example.com>
 ```
 
-You can sign commits automatically using `git commit -s`.
+Create a signed-off commit with:
 
-## Engineering Principles
+```bash
+git commit -s
+```
 
-1. **Local-First:** Prioritize local execution, on-device data storage, and deterministic offline behavior.
-2. **Strict Licensing:** Ensure all third-party dependencies are permissively licensed (MIT, Apache-2.0, BSD). Copyleft dependencies (GPL/AGPL) are prohibited unless explicitly documented.
-3. **Clean Code & Tooling:**
-   - Rust: format with `cargo fmt`, lint with `cargo clippy -- -D warnings`, check with `cargo deny check`.
-   - Swift: Swift 6 language mode, zero warnings, format with `swift-format`.
-   - Python: format and lint with `ruff check` and `ruff format`.
-   - TypeScript: pass `npm run typecheck && npm run lint`.
+## Pull request evidence
+
+A useful pull request states:
+
+- the problem and chosen approach;
+- affected components and user-visible behaviour;
+- verification commands and results;
+- known omissions or untested paths;
+- security, privacy, licence, migration, compatibility, and operational impact;
+- deployment, rollback, and recovery steps where the change can affect a running system;
+- screenshots or recordings only when they add evidence and contain no sensitive data.
+
+Report vulnerabilities privately through [`SECURITY.md`](./SECURITY.md), not through a public issue or pull request.
