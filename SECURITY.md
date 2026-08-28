@@ -1,28 +1,51 @@
-# Organization Security Policy — Magrathean UK
+# Security Policy — Magrathean UK
 
-## Private Vulnerability Reporting
+This is the default security policy for Magrathean UK repositories that do not publish a repository-specific `SECURITY.md`. A repository-specific policy takes precedence.
 
-Magrathean UK Ltd. takes system security and customer data privacy seriously. If you discover a security vulnerability in any Magrathean software or infrastructure, please report it privately:
+## Report vulnerabilities privately
 
-- **Email:** `contact@magrathean.uk` with subject `SECURITY: <Repo / Product Name>`
-- **GitHub:** Use the **Report a vulnerability** button on any public repository security advisory page.
+Do not open a public issue, discussion, or pull request for a suspected vulnerability.
 
-Please do NOT file public GitHub issues for security vulnerabilities.
+Use one of these routes:
 
-### Information to Include
-- Affected repository, component, and commit/release version
-- Detailed reproduction steps or proof-of-concept (PoC)
-- Potential security impact and exploitation preconditions
-- Any proposed remediation or patches
+- Email <contact@magrathean.uk> with the subject `SECURITY: <repository or product>`.
+- Use GitHub's **Report a vulnerability** option on the affected public repository when private vulnerability reporting is enabled.
 
-## Safe Harbour Commitment
+Do not send live credentials, private keys, access tokens, personal data, or production database extracts. Redact evidence and provide the minimum material needed to reproduce the issue safely.
 
-Magrathean UK Ltd. will not pursue legal action against security researchers who conduct good-faith vulnerability research that:
-- Targets researcher-owned instances, deployments, or authorized test environments;
-- Avoids persistence, destructive modifications, denial of service, and access to personal or customer data;
-- Halts immediately if sensitive data, cryptographic keys, or safety systems are encountered;
-- Reports promptly and gives Magrathean reasonable time to remediate before public disclosure;
-- Does not demand payment or ransom as a condition of disclosure.
+## Include
 
-## Excluded Activities
-No safe harbour applies to credential stuffing, automated denial of service attacks, social engineering/phishing of Magrathean staff, or unauthorized probing of third-party connected services (e.g. Tesla, Apple, Microsoft, Google, Polymarket).
+- affected repository, product, component, version, and commit where known;
+- deployment context and required permissions;
+- clear reproduction steps or a minimal proof of concept;
+- observed and potential impact;
+- whether exploitation is known to be active;
+- proposed remediation or a patch, when available;
+- a safe contact route for coordinated follow-up.
+
+## Scope
+
+Good-faith research is in scope only where it targets software or infrastructure operated by Magrathean UK, a researcher-owned deployment, or an environment for which the researcher has explicit authorisation.
+
+Third-party platforms, vehicle services, cloud tenants, app stores, payment systems, identity providers, and customer-operated deployments are outside Magrathean UK's authority unless the affected owner has expressly authorised the testing.
+
+## Safe-harbour position
+
+Magrathean UK Ltd. will not pursue legal action against a researcher for accidental, good-faith activity that follows this policy and:
+
+- uses the least intrusive method reasonably available;
+- avoids persistence, destructive changes, denial of service, social engineering, and lateral movement;
+- does not access, retain, alter, or disclose other people's data beyond the minimum unavoidable evidence;
+- stops immediately when sensitive data, credentials, safety systems, or an unexpected production boundary is encountered;
+- reports promptly and allows a reasonable period for investigation and remediation before disclosure;
+- does not demand payment, ransom, or commercial advantage as a condition of disclosure.
+
+This policy does not authorise activity prohibited by law or by the lawful owner of a third-party system. It does not create a bounty or promise payment.
+
+## Excluded activity
+
+Safe harbour does not cover credential stuffing, phishing, physical intrusion, malware, data exfiltration, automated denial of service, high-volume scanning that degrades service, persistence, extortion, or unauthorised testing of third-party connected services.
+
+## Handling and disclosure
+
+Reports are handled on a best-effort basis. Magrathean UK will validate scope, assess impact, coordinate remediation where appropriate, and agree disclosure timing with the reporter where practicable. No fixed response or remediation SLA is promised unless a separate written agreement applies.
