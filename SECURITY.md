@@ -1,6 +1,12 @@
-# Security Policy — Magrathean UK
+# Security policy for Magrathean UK
 
 This is the default security policy for Magrathean UK repositories that do not publish a repository-specific `SECURITY.md`. A repository-specific policy takes precedence.
+
+## Repository and release scope
+
+This `.github` repository contains shared policies and forms, not an application or service. Other projects define their own supported releases and deployment boundaries; this default does not establish a shared support window. Include the affected version or commit even if its support status is unclear.
+
+Keep reporting instructions and public examples free of secrets and private data. A change to these defaults can affect how reports are routed across repositories. Review that effect without treating documentation checks as a security audit of those projects.
 
 ## Report vulnerabilities privately
 

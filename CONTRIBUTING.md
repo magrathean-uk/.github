@@ -1,26 +1,29 @@
-# Contributing to Magrathean UK Repositories
+# Contributing to Magrathean UK repositories
 
-This is the default contribution policy for repositories that do not provide their own `CONTRIBUTING.md` or `AGENTS.md`. The closest repository-specific instructions, licence, architecture, runbook, and generated-file rules take precedence.
+This is the default contribution policy for repositories without their own `CONTRIBUTING.md`. Follow the affected repository's specific instructions, licence, and generated-file rules. Agent guidance may add working instructions; it does not change the licence or replace GitHub's contribution-file selection.
 
-Some public repositories contain proprietary source or public support material and may not accept external code contributions. Public visibility alone does not imply an open-source licence. Check the affected repository's `LICENSE` before starting work.
+External contributions are accepted only for public repositories, subject to the target repository's published licence and contribution terms. Private repositories are maintainer-only. Public visibility does not create an open-source licence or grant additional reuse rights. Check the target repository's terms before starting.
 
-## Before changing code
+## Before making a change
 
-1. Read the repository README, licence, contribution instructions, agent guidance, architecture, and runbook.
+1. Read the README and the instructions relevant to the files you will change.
 2. Search existing issues and pull requests.
-3. For a substantial behavioural, architectural, dependency, storage, protocol, or user-interface change, open a proposal before implementation.
-4. Confirm which files are generated and which file is the source of truth.
-5. Keep credentials, customer data, personal data, production configuration, and licensed third-party assets out of commits and fixtures.
+3. Open a proposal before substantial changes to behaviour, architecture, dependencies, storage, protocols, or the user interface.
+4. Identify the source of truth and any generated files.
 
-## Change expectations
+Keep credentials, personal or customer data, production configuration, and private licensed assets out of contributions and examples.
 
-- Keep the change narrowly scoped and explain why it is needed.
-- Preserve security boundaries, data ownership, compatibility, and rollback behaviour unless the proposal explicitly changes them.
-- Add or update tests for changed behaviour where the repository has a test lane.
-- Run the exact verification commands documented by that repository. Do not invent generic lint or formatting requirements that the project does not configure.
-- Update operator, user, API, migration, release, and recovery documentation when behaviour changes.
-- Do not hand-edit generated projects, bindings, lockstep artefacts, vendor trees, build outputs, or release evidence unless the repository explicitly says to do so.
-- Introduce dependencies only when their purpose, maintenance burden, licence, security impact, and replacement cost are understood.
+## Prepare and verify
+
+Keep changes focused and explain the problem they solve. Preserve security boundaries, data ownership, compatibility, and recovery behaviour unless the agreed change explicitly addresses them.
+
+Use the repository's documented verification commands. Add or update meaningful tests when behaviour changes and a test suite exists. Do not introduce generic lint or formatting requirements that the project does not configure. Update the documentation affected by the change.
+
+Do not hand-edit generated projects, bindings, vendor trees, build outputs, or release evidence unless repository guidance calls for it. Explain the purpose, maintenance cost, licence, and security implications of new dependencies.
+
+For changes to this shared-defaults repository, check links, Markdown rendering, issue-form syntax, and agreement between policies and templates. There is no build or test suite here. Changes can affect repositories using these defaults, so describe that impact in the pull request.
+
+For repositories with package installs or build output, consider [Clean Development](https://github.com/magrathean-uk/clean-development) as an optional way to manage development storage. This documentation repository needs no setup.
 
 ## Licensing and provenance
 
@@ -34,22 +37,10 @@ Unless a repository says otherwise, commits to an open-source Magrathean project
 Signed-off-by: Full Name <email@example.com>
 ```
 
-Create a signed-off commit with:
-
-```bash
-git commit -s
-```
+When making an authorised commit, Git can add the sign-off with `git commit -s`. A sign-off is a provenance declaration, not a transfer of copyright. This repository's own [licence notice](LICENSE) is explained in [LICENSING.md](LICENSING.md).
 
 ## Pull request evidence
 
-A useful pull request states:
+Describe the problem, approach, and affected behaviour. Include verification commands and results, skipped checks, and untested paths. Explain relevant security, privacy, licensing, dependency, migration, compatibility, and operational effects. Include deployment, rollback, or recovery steps when the change affects a running system or persisted data.
 
-- the problem and chosen approach;
-- affected components and user-visible behaviour;
-- verification commands and results;
-- known omissions or untested paths;
-- security, privacy, licence, migration, compatibility, and operational impact;
-- deployment, rollback, and recovery steps where the change can affect a running system;
-- screenshots or recordings only when they add evidence and contain no sensitive data.
-
-Report vulnerabilities privately through [`SECURITY.md`](./SECURITY.md), not through a public issue or pull request.
+Add sanitised screenshots or logs only when they help demonstrate the result. Follow the [code of conduct](CODE_OF_CONDUCT.md). Report vulnerabilities privately through [SECURITY.md](SECURITY.md), not in a public issue or pull request.

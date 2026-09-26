@@ -1,38 +1,27 @@
-## Summary
+<!-- External contributions are accepted only for public repositories, subject to the target repository's published licence and contribution terms. Private repositories are maintainer-only. -->
 
-<!-- What problem does this change solve, and why is this approach appropriate? -->
+## Change and reason
 
-## Scope
-
-<!-- List the components and user-visible or operator-visible behaviour changed. State what is deliberately not included. -->
+<!-- Describe the problem, what changes, and who is affected. For shared policies, explain the effect on repositories using the defaults. -->
 
 ## Verification
 
-<!-- Give exact commands, environments, and results. Name skipped checks and the reason. -->
+<!-- Give the checks or exact commands you ran and their results. State skipped checks and untested paths. Documentation changes should include link, syntax, and rendering checks. -->
 
-```text
-command:
-result:
-```
+## Relevant impact
 
-## Risk and compatibility
-
-<!-- Cover security, privacy, permissions, data integrity, dependencies, licences, APIs, migrations, performance, accessibility, supported platforms, and backwards compatibility where relevant. -->
-
-## Deployment, rollback, and recovery
-
-<!-- Required for changes that can affect a running system, persisted data, release artefacts, or external consumers. Otherwise state "Not applicable". -->
+<!-- Describe security, privacy, licensing, dependencies, compatibility, migrations, or operational effects where relevant. Include deployment, rollback, and recovery steps if the change affects a running system or persisted data. -->
 
 ## Evidence
 
-<!-- Add sanitised screenshots, logs, traces, benchmarks, or before/after output only where they prove the result. -->
+<!-- Add sanitised screenshots or logs only where useful. Never post vulnerability details here; follow the affected repository's SECURITY.md. -->
 
 ## Checklist
 
-- [ ] I read the repository-specific README, licence, contribution guidance, architecture, runbook, and generated-file rules.
-- [ ] The change is narrowly scoped and the source of truth was edited rather than a generated artefact.
-- [ ] Relevant build, test, lint, format, schema, documentation, and release checks passed, or skipped checks are named above.
-- [ ] No credentials, personal data, production configuration, private customer material, or unlicensed assets were added.
-- [ ] New dependencies and copied/generated material have compatible licences and documented provenance.
-- [ ] User, operator, API, migration, security, recovery, and release documentation was updated where behaviour changed.
-- [ ] Open-source commits include the required DCO sign-off unless the repository explicitly says otherwise.
+- [ ] I followed the affected repository's contribution instructions and licence.
+- [ ] I changed the source of truth and preserved unrelated work.
+- [ ] I recorded relevant checks, results, and remaining gaps above.
+- [ ] I removed credentials, private configuration, personal data, and confidential material.
+- [ ] I identified applicable licence and provenance terms for added material.
+- [ ] I updated documentation affected by this change.
+- [ ] I included a DCO sign-off if the affected open-source repository requires one, or this does not apply.

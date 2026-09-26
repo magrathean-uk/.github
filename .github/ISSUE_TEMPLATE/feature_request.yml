@@ -55,7 +55,7 @@ body:
     attributes:
       label: Confirmation
       options:
-        - label: I searched existing issues, documentation, and the current roadmap.
+        - label: I searched existing issues and documentation, including a roadmap if available.
           required: true
         - label: The request describes an outcome rather than only a preferred technology.
           required: true

@@ -1,5 +1,5 @@
 blank_issues_enabled: false
 contact_links:
-  - name: Security Vulnerability Reporting
+  - name: Report a security vulnerability privately
     url: https://github.com/magrathean-uk/.github/blob/main/SECURITY.md
-    about: Please report security vulnerabilities privately via email or Security Advisories.
+    about: Follow the affected repository's security policy, or this default if it has none. Do not post vulnerability details in a public issue.
