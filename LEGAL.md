@@ -17,7 +17,7 @@ one, lists the parts that are licensed differently. There are three kinds:
 | Kind | Licence | What you may do |
 | --- | --- | --- |
 | Permissive | MIT or Apache-2.0 | Use, change and share the code, including commercially, keeping the licence and notices |
-| Copyleft | AGPL-3.0-only | The same, but if you share a changed version or run it for others over a network, you must publish its source under the same licence |
+| Copyleft | GPL-3.0-only or AGPL-3.0-only | The same, but if you share a changed version, you must publish its source under the same licence; under the AGPL, also if you run it for others over a network |
 | Proprietary | Magrathean licence | Read public source on GitHub; nothing else without written permission |
 
 A licence covers code and documentation. It gives no right to use our names or logos.
@@ -44,6 +44,8 @@ Public repositories under a permissive or copyleft licence accept pull requests.
 contributing, you license your contribution under the repository's licence and confirm you
 have the right to do so; sign off each commit (`git commit -s`). Teslatlas Hub and bmwatlas
 Hub are maintained only by their owner; their contributor terms are in each repository.
+Tescam is also distributed through the App Store; its contributor terms, in its repository,
+let us ship accepted contributions there.
 Proprietary repositories do not accept outside code.
 
 ## Privacy and terms
