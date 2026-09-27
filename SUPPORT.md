@@ -1,23 +1,31 @@
-# Support for Magrathean UK repositories
+# Support
 
-Use the affected repository's support document and product support route when available. This policy is the fallback for repositories without their own support guidance.
+Use the affected repository's own support document and product links first. This is the
+fallback for repositories without one.
 
 ## Repository issues
 
-Use the affected repository's issue tracker, if enabled, for reproducible defects, focused feature requests, documentation errors, and build or installation failures involving that repository. Problems in these shared policies and templates belong in [this repository's issue tracker](https://github.com/magrathean-uk/.github/issues).
+Use the affected repository's issue tracker, if enabled, for reproducible defects, focused
+feature requests, documentation errors and installation failures. Problems with these shared
+defaults belong in [this repository's issues](https://github.com/magrathean-uk/.github/issues).
 
-Check the README, existing issues, and any relevant release notes or runbook first. Include the version or commit, environment, reproduction steps, expected and actual behaviour, and minimal sanitised evidence.
+Check the README, existing issues and any release notes first. Include the version or commit,
+environment, reproduction steps, and expected and actual behaviour.
 
-Do not post credentials, private keys, personal or customer data, vehicle identifiers, tenant exports, private hostnames, or production configuration. Report suspected vulnerabilities privately through [SECURITY.md](SECURITY.md).
+Do not post credentials, private keys, personal or customer data, vehicle identifiers, tenant
+exports or production configuration. Report a suspected vulnerability privately through
+[SECURITY.md](SECURITY.md) instead.
 
 ## Other enquiries
 
-Repository issues are not the right place for unrelated third-party support, account recovery, billing, commercial licensing, or requests to bypass access controls. Do not share private production access or customer material to obtain public support.
+Repository issues are not the place for unrelated third-party support, account recovery,
+billing or requests to bypass access controls.
 
 - Company: <https://magrathean.uk>
 - Teslatlas: <https://teslatlas.eu>
 - IT and security practice: <https://magrathean.uk/it/>
 - AI adoption practice: <https://magrathean.uk/ai/>
-- General, commercial, and licensing enquiries: <contact@magrathean.uk>
+- General, commercial and licensing enquiries: <contact@magrathean.uk>
 
-Public repository support is provided on a best-effort basis. A submitted issue is not a support contract or service-level commitment. Guaranteed response or resolution times require a separate written support agreement.
+Support is provided on a best-effort basis. A submitted issue is not a support contract.
+Guaranteed response times need a separate written agreement.

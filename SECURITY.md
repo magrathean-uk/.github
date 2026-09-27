@@ -1,57 +1,33 @@
-# Security policy for Magrathean UK
+# Security policy
 
-This is the default security policy for Magrathean UK repositories that do not publish a repository-specific `SECURITY.md`. A repository-specific policy takes precedence.
+This is the default security policy for Magrathean UK repositories that do not publish their
+own `SECURITY.md`. A repository-specific policy takes precedence over this one.
 
-## Repository and release scope
+## Report a vulnerability privately
 
-This `.github` repository contains shared policies and forms, not an application or service. Other projects define their own supported releases and deployment boundaries; this default does not establish a shared support window. Include the affected version or commit even if its support status is unclear.
+Do not open a public issue, discussion or pull request for a suspected vulnerability.
 
-Keep reporting instructions and public examples free of secrets and private data. A change to these defaults can affect how reports are routed across repositories. Review that effect without treating documentation checks as a security audit of those projects.
+- Use GitHub's **Report a vulnerability** button on the affected repository, where private
+  vulnerability reporting is enabled there.
+- Otherwise, email <contact@magrathean.uk> with the subject `SECURITY: <repository>`.
 
-## Report vulnerabilities privately
+Do not send live credentials, private keys, access tokens, personal data or production data.
+Redact evidence and include only what is needed to reproduce the issue.
 
-Do not open a public issue, discussion, or pull request for a suspected vulnerability.
+## What to include
 
-Use one of these routes:
-
-- Email <contact@magrathean.uk> with the subject `SECURITY: <repository or product>`.
-- Use GitHub's **Report a vulnerability** option on the affected public repository when private vulnerability reporting is enabled.
-
-Do not send live credentials, private keys, access tokens, personal data, or production database extracts. Redact evidence and provide the minimum material needed to reproduce the issue safely.
-
-## Include
-
-- affected repository, product, component, version, and commit where known;
-- deployment context and required permissions;
+- the affected repository, component, version or commit;
 - clear reproduction steps or a minimal proof of concept;
-- observed and potential impact;
-- whether exploitation is known to be active;
-- proposed remediation or a patch, when available;
-- a safe contact route for coordinated follow-up.
+- observed and potential impact; and
+- whether exploitation is known to be active.
 
 ## Scope
 
-Good-faith research is in scope only where it targets software or infrastructure operated by Magrathean UK, a researcher-owned deployment, or an environment for which the researcher has explicit authorisation.
+We recognise good-faith security research only against your own installation of Magrathean
+UK software. Testing anyone else's deployment, account or data, or a third-party service, is
+not authorised by this policy and is not covered by it.
 
-Third-party platforms, vehicle services, cloud tenants, app stores, payment systems, identity providers, and customer-operated deployments are outside Magrathean UK's authority unless the affected owner has expressly authorised the testing.
+## Handling
 
-## Safe-harbour position
-
-Magrathean UK Ltd. will not pursue legal action against a researcher for accidental, good-faith activity that follows this policy and:
-
-- uses the least intrusive method reasonably available;
-- avoids persistence, destructive changes, denial of service, social engineering, and lateral movement;
-- does not access, retain, alter, or disclose other people's data beyond the minimum unavoidable evidence;
-- stops immediately when sensitive data, credentials, safety systems, or an unexpected production boundary is encountered;
-- reports promptly and allows a reasonable period for investigation and remediation before disclosure;
-- does not demand payment, ransom, or commercial advantage as a condition of disclosure.
-
-This policy does not authorise activity prohibited by law or by the lawful owner of a third-party system. It does not create a bounty or promise payment.
-
-## Excluded activity
-
-Safe harbour does not cover credential stuffing, phishing, physical intrusion, malware, data exfiltration, automated denial of service, high-volume scanning that degrades service, persistence, extortion, or unauthorised testing of third-party connected services.
-
-## Handling and disclosure
-
-Reports are handled on a best-effort basis. Magrathean UK will validate scope, assess impact, coordinate remediation where appropriate, and agree disclosure timing with the reporter where practicable. No fixed response or remediation SLA is promised unless a separate written agreement applies.
+Reports are reviewed on a best-effort basis. We do not promise a fixed response or
+remediation time unless a separate written agreement says so.

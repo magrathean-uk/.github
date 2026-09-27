@@ -1,47 +1,69 @@
-# Magrathean UK shared GitHub defaults
+<p align="center">
+  <img src="https://raw.githubusercontent.com/magrathean-uk/magrathean-uk/main/assets/icons/magrathean.png" width="96" height="96" alt="">
+</p>
 
-Community policies and issue and pull request templates for repositories owned by [Magrathean UK](https://github.com/magrathean-uk). This repository contains documentation and GitHub forms. There is no application to install or build.
+<h1 align="center">Magrathean UK shared GitHub defaults</h1>
+
+<p align="center">Community policies and issue and pull request templates for every repository that does not publish its own copy.</p>
+
+<p align="center">
+  <a href="LEGAL.md">Legal</a>
+</p>
+
+Community policies and issue and pull request templates for every repository owned by
+[Magrathean UK](https://github.com/magrathean-uk) that does not publish its own copy.
 
 ## Find the right guidance
 
 | File | Purpose |
 | --- | --- |
-| [Contributing](CONTRIBUTING.md) | Propose changes, verify them, and document provenance |
-| [Security](SECURITY.md) | Report vulnerabilities privately and understand research boundaries |
-| [Support](SUPPORT.md) | Get help with a repository or find product support |
-| [Code of conduct](CODE_OF_CONDUCT.md) | Participation, reporting, and enforcement |
-| [Issue forms](.github/ISSUE_TEMPLATE/) | Report defects or propose improvements |
-| [Pull request template](.github/PULL_REQUEST_TEMPLATE.md) | Explain changes, verification, and relevant risks |
+| [Contributing](CONTRIBUTING.md) | Propose a change and understand licensing of contributions |
+| [Security](SECURITY.md) | Report a vulnerability privately |
+| [Support](SUPPORT.md) | Get help with a repository or a product |
+| [Code of conduct](CODE_OF_CONDUCT.md) | Participation and enforcement |
+| [Legal notice](LEGAL.md) | Publisher, licences, trade marks and contributions across the account |
+| [Issue forms](.github/ISSUE_TEMPLATE/) | Report a defect or propose an improvement |
+| [Pull request template](.github/PULL_REQUEST_TEMPLATE.md) | Explain a change and how it was checked |
 
 ## How defaults apply
 
-GitHub uses these supported community files when an owned repository has no corresponding file of its own. A repository's valid issue templates or issue-template configuration replace the entire default issue-template set. Inherited files are displayed by GitHub; they are not copied into the receiving repository's clone or downloads. See [GitHub's default-file rules](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/creating-a-default-community-health-file).
+GitHub shows these files on any `magrathean-uk` repository that has no matching file of its
+own. A repository's own issue templates replace this whole default set. GitHub displays an
+inherited file; it does not copy it into the repository. `README.md` and `LICENSE` are not
+part of this mechanism — every repository keeps its own. See
+[GitHub's default community-file rules](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/creating-a-default-community-health-file).
 
-The issue forms use `bug` and `enhancement` labels; repositories using the forms need those labels.
-
-Each project sets its own licence, supported releases, commands, and operational boundaries. This repository's licence is not a default licence for other projects. Its agent instructions describe maintenance of this repository and are not shared community-health defaults.
+The issue forms use the `bug` and `enhancement` labels; a repository using them needs those
+labels.
 
 ## Contributions
 
-External contributions are accepted only for public repositories, subject to the target repository's published licence and contribution terms. Private repositories are maintainer-only. See [CONTRIBUTING.md](CONTRIBUTING.md) for the shared workflow.
+External contributions are accepted only for public repositories, under that repository's own
+licence. Private and proprietary repositories are maintainer-only. See
+[CONTRIBUTING.md](CONTRIBUTING.md).
 
-## Maintain this repository
+## Maintaining this repository
 
-Edit the Markdown policies or the forms under `.github/ISSUE_TEMPLATE/`. Keep advice useful across projects without assuming a language, runtime, product, or release process.
+Edit the Markdown policies or the forms under `.github/ISSUE_TEMPLATE/`. Keep advice useful
+across every project, without assuming a language, runtime or product.
 
-Before submitting a change:
+Before proposing a change: check Markdown links and headings; check issue-form YAML for valid
+syntax, unique field IDs and required fields; and check that the policies and templates still
+agree with each other. There is no build, test or lint command; preview the affected Markdown
+and forms instead.
 
-- Check Markdown links, headings, and rendered text.
-- Check issue-form YAML, unique field IDs, required fields, and the private security-reporting route.
-- Review the policies and templates together for conflicting requirements.
-- Explain any change to contribution, conduct, licensing, or security terms.
+## Licence
 
-There are no configured build, test, or lint commands. Preview the affected Markdown and GitHub form before adopting changes. See [contributing](CONTRIBUTING.md) for the shared workflow.
-
-## Licence and reuse
-
-[LICENSE](LICENSE) is the existing Magrathean UK Ltd. all-rights-reserved notice. It describes publication for the operation of Magrathean UK projects on GitHub and contains no standard open-source licence grant. See [licensing and attribution](LICENSING.md) for the distinction between these documents and the projects that use them.
+This repository's own text and templates are proprietary; all rights reserved. See
+[LICENSE](LICENSE). It is not a default licence for other repositories — each project sets its
+own. See [LEGAL.md](LEGAL.md) for the account-wide legal notice, including names, other
+companies' names and how contributions are licensed.
 
 ## Contact
 
-Use the affected repository's issue tracker for non-sensitive defects. For a problem with these shared defaults, use [this repository's issues](https://github.com/magrathean-uk/.github/issues). Report vulnerabilities through [SECURITY.md](SECURITY.md). General enquiries: <contact@magrathean.uk>.
+Use the affected repository's issue tracker for a non-sensitive defect. For a problem with
+these shared defaults, use
+[this repository's issues](https://github.com/magrathean-uk/.github/issues). Report a
+vulnerability through [SECURITY.md](SECURITY.md). General enquiries: <contact@magrathean.uk>.
+
+<sub>© 2026 MAGRATHEAN UK LTD · <a href="https://github.com/magrathean-uk/.github/blob/main/LEGAL.md">Legal</a></sub>

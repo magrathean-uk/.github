@@ -8,7 +8,10 @@ This is the `magrathean-uk/.github` community-policy repository. It contains Mar
 - Inspect the current diff and preserve unrelated work. Read the policy or template being changed and its linked documents.
 - Use bounded delegation for independent work when it is useful, with distinct file ownership. Handle simple changes directly.
 - Keep shared defaults independent of any one product or technology. Explain repository-specific overrides in README.md and CONTRIBUTING.md.
-- Preserve LICENSE verbatim unless the owner explicitly authorises a legal change. LICENSING.md explains the current notice; do not copy another project's licence or contributor-assignment rules here.
+- Preserve LICENSE and LEGAL.md verbatim unless the owner explicitly authorises a legal change; do not copy another project's licence or contributor-assignment rules here.
+- Legal files (`LICENSE`, `NOTICE`, `docs/legal/`, contributor terms, copyright and
+  attribution strings) are owner-controlled: change them only on the owner's explicit
+  instruction.
 - Preserve existing security, safe-harbour, and conduct commitments unless a change to those terms is part of the authorised task. Keep private reporting separate from public issue forms.
 - Use only verified public contacts and links. Never add credentials, private infrastructure details, personal data, or internal review evidence to public documentation.
 - Keep agent instructions here. CLAUDE.md imports this file; do not duplicate the rules or add model-specific prompting advice.
