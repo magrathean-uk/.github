@@ -26,7 +26,7 @@ A licence covers code and documentation. It gives no right to use our names or l
 
 Magrathean, Teslatlas and our other product names are our trade marks. You may use them to
 refer to our products truthfully, for example "works with Teslatlas" or "a fork of
-Termex". You may not use them, or anything confusingly similar, as the name or logo of your
+hostmap". You may not use them, or anything confusingly similar, as the name or logo of your
 own product, domain or service, or in a way that suggests we endorse you. A fork must have a
 different name; it may say which Magrathean project it is based on. For anything else, ask
 us.
