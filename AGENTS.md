@@ -30,3 +30,7 @@ GIT_OPTIONAL_LOCKS=0 git diff --check
 Check each changed relative link against the repository tree and each changed external link against its destination. Check headings and Markdown fences. For issue forms, check valid YAML, unique field IDs, supported field types, and required-field syntax. Preserve the private security route in config.yml and the forms.
 
 Review Markdown and forms in their intended GitHub context before adoption. State whether this preview was actually completed. There is no configured build or test command; use checks appropriate to the actual files rather than inventing an application test suite. Report what changed, which checks ran, and any remaining uncertainty.
+
+## Pending URL migration
+
+The next release must apply [NEXT-RELEASE-URLS.md](NEXT-RELEASE-URLS.md): product sites moved to `https://magrathean.uk/solutions/<slug>/` and support addresses to `contact+<slug>@magrathean.uk`. Remove this section with that file once released.
