@@ -21,6 +21,8 @@ one, lists the parts that are licensed differently. There are three kinds:
 | Proprietary | Magrathean licence | Read public source on GitHub; nothing else without written permission |
 
 A licence covers code and documentation. It gives no right to use our names or logos.
+Open-source code is free to take and build on, and comes as it is, without warranty, as its
+licence says.
 
 ## Names
 
@@ -33,10 +35,12 @@ us.
 
 ## Other companies' names
 
-Tesla, BMW, Apple, Google, Meta, OpenAI, Anthropic and other names mentioned in our
+Tesla, BMW, Apple, Microsoft, Google, Meta, OpenAI, Anthropic and other names mentioned in our
 repositories belong to their owners. We use them only to describe compatibility. Our
 products are independent and are not affiliated with, endorsed by or supported by those
-companies unless a product says otherwise.
+companies unless a product says otherwise. The same goes for standards bodies whose work a
+product refers to, such as CISA, the NCSC, IASME and the Center for Internet Security: a
+mapping to their controls is ours and is not approved by them.
 
 ## Contributions
 
